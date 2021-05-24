@@ -8,7 +8,10 @@ body {
   color: hsl(240, 10%, 16%);
   font-size: 16px;
 }
-section {
+
+/*---------------------------------First Section---------------------------------------------*/
+
+#intro {
   background-image: url("images/bg-pattern-intro.svg"),
     linear-gradient(90deg, rgba(251, 116, 62, 1) 0%, rgba(255, 82, 93, 1) 43%);
   background-size: 2000px;
@@ -33,6 +36,7 @@ section {
   position: absolute;
   left: 0px;
   top: 50px;
+
   /* JS*******
   
   *******/
@@ -41,6 +45,7 @@ section {
 .js-menu {
   display: none;
 }
+
 .sub-li {
   padding: 10px 18px 10px 0;
 }
@@ -177,4 +182,68 @@ ul li a {
 
 .sub-links {
   display: flex;
+}
+
+/*---------------------------------Second Section---------------------------------------------*/
+#head2 {
+  padding: 20px;
+  padding-bottom: 80px;
+  background-image: url("images/illustration-editor-desktop.svg");
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position: 125% 20px;
+}
+
+.head {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 30px;
+  /*border: 1px solid blue;*/
+}
+
+.text1 {
+  padding: 40px 0;
+  width: 35%;
+  margin-left: 10%;
+  /*border: 1px solid blue;*/
+}
+
+.text2 {
+  padding: 40px 0;
+  width: 35%;
+  margin-left: 10%;
+  /*border: 1px solid blue;*/
+}
+
+.text1 p,
+.text2 p {
+  line-height: 1.5em;
+}
+
+.text1 h3,
+.text2 h3 {
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+/*---------------------------------Third Section---------------------------------------------*/
+
+.minute-section {
+  border: 1px solid blue;
+  padding: 60px 0;
+  width: 35%;
+  margin-left: 800px;
+  font-size: #ffffff;
+}
+
+.minute-section h3 {
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.minute-section p {
+  line-height: 1.5em;
+}
+
+#head3 {
+  border: 1px solid greenyellow;
 }

@@ -1,13 +1,13 @@
 
 //on click company, product, connect : sub -links should be displayed ---- on click main-li, display js-menu
 
-/*document.querySelectorAll(".main-a").forEach(el => el.addEventListener("click", function(){
-  const menu = document.querySelectorAll(".js-menu");
-  menu.forEach(content => content.style.display = "block");
-}))*/
+/*
+onclick 'one', display:block
+onclick 'two', display:block and add js-menu, remove js-menu from others 
+onclick 'three' display:block add js-menu, remove from others*/
 
-document.querySelector(".main-a").addEventListener("click", function(){
-  document.querySelector(".js-menu").style.display = "block";
+document.querySelector('.one').addEventListener('click',function(){
+  document.querySelector('.product').classList.add('js-menu');
 })
 
 //adding and removing class list .js-menu

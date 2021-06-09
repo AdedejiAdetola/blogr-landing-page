@@ -82,13 +82,16 @@ ul li a {
   padding: 20px 150px;
   display: flex;
   justify-content: space-between;
+  border: 1px solid green;
   /*flex-wrap: wrap;
   overflow: hidden;*/
 }
 .flex {
   display: flex;
   /*flex-wrap: wrap;*/
+  border: 2px solid blue;
 }
+
 .main-li {
   padding: 20px;
   position: relative;
@@ -198,7 +201,7 @@ ul li a {
   background-size: 700px;
   background-repeat: no-repeat;
   background-position: 125% 20px;
-  border: 2px solid red;
+  height: auto;
 }
 
 .head {
@@ -246,12 +249,32 @@ ul li a {
   }
 }
 
-/*@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 660px) {
   #head2 {
-    background-size: 200px;
-    background-position-x: 5%;
+    background-size: 100%;
+    background-image: url("images/illustration-editor-mobile.svg");
+    background-position: -10px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-}*/
+  .text1 {
+    margin-top: 120%;
+  }
+  .text1,
+  .text2 {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 513px) {
+  .head {
+    font-size: 17px;
+  }
+}
+
 /*---------------------------------Third Section---------------------------------------------*/
 
 .phone {
@@ -272,6 +295,11 @@ ul li a {
   top: -50px;
 }
 
+.loop img {
+  width: 80%;
+  height: 80%;
+}
+
 .minute-section {
   padding: 100px 0;
   width: 45%;
@@ -287,6 +315,49 @@ ul li a {
 .minute-section p {
   line-height: 1.5em;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 920px) {
+  .phone {
+    background-size: 80%;
+    margin-top: 210px;
+    height: 100%;
+    background-position: 50% 50%;
+  }
+  #head3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+
+  .minute-section {
+    padding: 0;
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 531px) {
+  .phone {
+    font-size: 17px;
+  }
+  .minute-section {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .phone {
+    background-size: 160%;
+    background-position: 50% -500%;
+  }
+
+  #head3 {
+    position: relative;
+    top: -100px;
+  }
 }
 
 /*---------------------------------Fourth Section---------------------------------------------*/
@@ -321,6 +392,61 @@ ul li a {
   font-size: 30px;
 }
 
+@media only screen and (max-width: 1380px) {
+  #head4 {
+    background-position-x: -120%;
+  }
+  .text3,
+  .text4 {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  #head4 {
+    background-size: 600px;
+    background-position-x: -165px;
+    background-position-y: 158.5px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #head4 {
+    background-size: 400px;
+    background-position-y: 237.2px;
+  }
+  .text3,
+  .text4 {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  #head4 {
+    background-size: 100%;
+    background-image: url("images/illustration-laptop-mobile.svg");
+    background-position: -10px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .text3 {
+    margin-top: 100%;
+  }
+  .text3,
+  .text4 {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 513px) {
+  #head4 {
+    font-size: 17px;
+  }
+}
+
 /*---------------------------------Foot Section---------------------------------------------*/
 #foot {
   background: hsl(237, 17%, 21%);
@@ -340,6 +466,13 @@ ul li a {
 #foot div ul li {
   padding-bottom: 15px;
 }
+#foot div ul {
+  border: 2px solid red;
+}
+
+#foot div {
+  border: 2px solid blue;
+}
 
 #foot div ul li a {
   text-decoration: none;
@@ -349,4 +482,16 @@ ul li a {
 #foot div ul li a:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 570px) {
+  #foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #foot div {
+  }
 }

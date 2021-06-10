@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*overflow-x: hidden/wrap;*/
 }
 
 body {
@@ -23,9 +22,6 @@ body {
   max-width: 100%;
   height: auto;
 }
-/*.menu {
-  border: 0.5px solid green;
-}*/
 
 .sub-menu {
   background-color: white;
@@ -39,9 +35,6 @@ body {
   left: 0px;
   top: 50px;
   display: none;
-  /* JS*******
-  
-  *******/
 }
 
 .js-menu {
@@ -72,6 +65,7 @@ body {
 ul li {
   list-style-type: none;
   color: #fbf9fa;
+  border: 2px solid black;
 }
 
 ul li a {
@@ -83,8 +77,6 @@ ul li a {
   display: flex;
   justify-content: space-between;
   border: 1px solid green;
-  /*flex-wrap: wrap;
-  overflow: hidden;*/
 }
 .flex {
   display: flex;
@@ -191,6 +183,14 @@ ul li a {
 
 .sub-links {
   display: flex;
+}
+
+@media only screen and (max-width: 960px) {
+  /* .flex {
+    display: none;
+  }
+    .main-menu{padding}  
+*/
 }
 
 /*---------------------------------Second Section---------------------------------------------*/
@@ -466,13 +466,6 @@ ul li a {
 #foot div ul li {
   padding-bottom: 15px;
 }
-#foot div ul {
-  border: 2px solid red;
-}
-
-#foot div {
-  border: 2px solid blue;
-}
 
 #foot div ul li a {
   text-decoration: none;
@@ -493,5 +486,10 @@ ul li a {
   }
 
   #foot div {
+    margin-bottom: 50px;
+  }
+
+  #foot div:last-child {
+    margin-bottom: 0;
   }
 }

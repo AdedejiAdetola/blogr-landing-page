@@ -40,6 +40,10 @@ body {
 .js-menu {
   display: block;
 }
+.links,
+.register {
+  display: flex;
+}
 
 .sub-li {
   padding: 10px 18px 10px 0;
@@ -165,6 +169,7 @@ ul li a {
   align-items: center;
   height: 470.8px;
   flex-direction: column;
+  text-align: center;
 }
 
 .title ul {
@@ -185,12 +190,38 @@ ul li a {
   display: flex;
 }
 
-@media only screen and (max-width: 960px) {
-  /* .flex {
-    display: none;
+.bar-icon,
+.fa-bars {
+  display: none;
+}
+
+@media only screen and (max-width: 1190px) {
+  .main-menu {
+    padding: 20px 10px;
   }
-    .main-menu{padding}  
-*/
+}
+
+@media only screen and (max-width: 850px) {
+  .links {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100px;
+  }
+  .register {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 290px;
+  }
+  .flex {
+  }
+  .bar-icon,
+  .fa-bars {
+    display: block;
+    align-self: center;
+    color: white;
+  }
 }
 
 /*---------------------------------Second Section---------------------------------------------*/

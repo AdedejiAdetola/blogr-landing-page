@@ -68,6 +68,11 @@ document.querySelector('body').addEventListener('click', function(event){
   }
 })
 
+document.querySelector('.bar-icon').addEventListener('click', function(){
+  document.querySelector('.fas4').classList.toggle('fa-times');
+})
+
+
 
 
 

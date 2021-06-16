@@ -40,9 +40,16 @@ body {
 .js-menu {
   display: block;
 }
-.links,
-.register {
-  display: flex;
+.main-menu {
+  margin: 0;
+  padding: 10px 50px;
+}
+
+.main-menu li {
+  float: left;
+}
+.buttons {
+  float: right;
 }
 
 .sub-li {
@@ -69,23 +76,10 @@ body {
 ul li {
   list-style-type: none;
   color: #fbf9fa;
-  border: 2px solid black;
 }
 
 ul li a {
   text-decoration: none;
-}
-
-.main-menu {
-  padding: 20px 150px;
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid green;
-}
-.flex {
-  display: flex;
-  /*flex-wrap: wrap;*/
-  border: 2px solid blue;
 }
 
 .main-li {
@@ -133,7 +127,7 @@ ul li a {
   text-decoration: none;
   text-shadow: 0px 1px 0px #ff525e;
   position: relative;
-  bottom: 12px;
+  bottom: 10px;
 }
 
 .myButton:hover {
@@ -155,7 +149,7 @@ ul li a {
   text-decoration: none;
   text-shadow: 0px 1px 0px #ff525e;
   position: relative;
-  bottom: 12px;
+  bottom: 10px;
 }
 
 .myButton1:hover {
@@ -170,6 +164,7 @@ ul li a {
   height: 470.8px;
   flex-direction: column;
   text-align: center;
+  clear: both;
 }
 
 .title ul {
@@ -194,33 +189,102 @@ ul li a {
 .fa-bars {
   display: none;
 }
+@media only screen and (max-width: 380px) {
+  .title {
+    width: 100%;
+    margin: auto;
+  }
 
-@media only screen and (max-width: 1190px) {
-  .main-menu {
-    padding: 20px 10px;
+  .title h1 {
+    font-size: 34px;
+    width: 80%;
+  }
+
+  .title p {
+    font-size: 18px;
+    width: 80%;
+  }
+
+  .myButtons {
+    font-size: 10px;
+    padding: 14px 20px;
+    width: 120%;
   }
 }
-
 @media only screen and (max-width: 850px) {
-  .links {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 100px;
-  }
-  .register {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 290px;
-  }
-  .flex {
-  }
   .bar-icon,
   .fa-bars {
     display: block;
-    align-self: center;
-    color: white;
+    color: #fff;
+  }
+
+  .main-menu {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .bar-icon {
+    order: 1;
+  }
+
+  .main-list {
+    order: 2;
+    background-color: #fff;
+    box-shadow: -1px -1px 5px 0px rgba(140, 128, 128, 1);
+    -webkit-box-shadow: -1px -1px 5px 0px rgba(140, 128, 128, 1);
+    -moz-box-shadow: -1px -1px 5px 0px rgba(140, 128, 128, 1);
+    display: none;
+  }
+  .main-li,
+  .main-list,
+  .buttons {
+    width: 100%;
+    text-align: center;
+  }
+  .buttons {
+    order: 3;
+    background-color: #fff;
+    box-shadow: -1px -1px 5px 0px rgba(140, 128, 128, 1);
+    -webkit-box-shadow: -1px -1px 5px 0px rgba(140, 128, 128, 1);
+    -moz-box-shadow: -1px -1px 5px 0px rgba(140, 128, 128, 1);
+    display: none;
+  }
+  .sub-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    background-color: #dddddd;
+  }
+  .signup {
+    background-color: hsl(356, 100%, 66%);
+    color: #fff;
+  }
+  .main-a {
+    color: hsl(207, 13%, 34%);
+  }
+  .fa-chevron-down,
+  .fa-chevron-up,
+  .fa-chevron-down:hover,
+  .fa-chevron-up:hover {
+    color: hsl(356, 100%, 66%);
+  }
+
+  .main-a:hover {
+    color: hsl(207, 10%, 37%);
+  }
+
+  .js-menu {
+    display: flex;
+  }
+
+  .myButtons {
+    font-size: 10px;
+    padding: 14px 20px;
+    width: 120%;
   }
 }
 

@@ -90,7 +90,7 @@ document.querySelector('.bar-icon').addEventListener('click', function(){
     } else {
       elements[i].style.display = 'none';
       forFas4.add('fa-bars');
-      forFas4.classList.remove('fa-times');
+      forFas4.remove('fa-times');
     }
   }
 
